@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+nav {
+    display: flex;
+    padding: 2vw;
+    font-size: .8vw;
+    justify-content: flex-end;
+    gap: 1.4vw;
+    align-items: center;
+}
+
+nav i {
+    font-size: 1.5vw;
+    background-color: rgb(0, 0, 0);
+    padding: .5vw;
+    border-radius: 50%;
+    color: white;
+}
+nav #menu{
+    display: none;
+}
+
+header {
+    padding: 1vw 6vw;
+}
+
+header h1 {
+    width: 55%;
+    font-size: 5vw;
+    font-weight: 500;
+    margin-bottom: 3vw;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+}
+
+#bottom p {
+    font-size: 1.5vw;
+    width: 38%;
+}
+
+#bottom #right {
+    width: 27%;
+}
+
+#bottom #right .elem {
+    padding: 1vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000;
+}
+
+#bottom #right .elem a {
+    color: black;
+    font-size: 1.6vw;
+}
+
+#bottom #right .elem i {
+    font-size: 2vw;
+}
+
+img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 600px) {
+    nav h3 {
+        display: none;
+    }
+
+    nav i {
+        display: none;
+    }
+
+    nav #menu {
+        display: block;
+        font-size: 8vw;
+        padding: 0;
+        background: white;
+        color: #000;
+    }
+
+    header h1 {
+        width: 100%;
+        font-size: 10vw;
+    }
+
+    #bottom {
+        display: block;
+    }
+
+    #bottom p {
+        font-size: 5vw;
+        width: 90%;
+        padding-bottom: 5vw;
+    }
+
+    #bottom #right {
+        width: 90%;
+    }
+
+    #bottom #right .elem a {
+        font-size: 6vw;
+    }
+
+    #bottom #right .elem i {
+        font-size: 6vw;
+    }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    nav {
+        padding: 2vw;
+        font-size: 2vw;
+        gap: 3vw;
+    }
+    
+    nav i {
+        font-size: 4vw;
+    }
+
+    header h1 {
+        width: 80%;
+        font-size: 8vw;
+    }
+
+    #bottom {
+        display: block;
+    }
+
+    #bottom p {
+        font-size: 2.8vw;
+        width: 70%;
+        padding-bottom: 4vw;
+    }
+
+    #bottom #right {
+        width: 60%;
+    }
+
+    #bottom #right .elem a {
+        font-size: 3.2vw;
+    }
+
+    #bottom #right .elem i {
+        font-size: 4vw;
+    }
+}
